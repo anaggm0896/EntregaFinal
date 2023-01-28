@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  background: linear-gradient(white 20%, #EFCDA6 100%);
+}
+
+/* Logo, titulo y menu */
+#header {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+  padding-bottom: 2%;
+}
+#header h1 {
+  font-style: italic;
+  font-family: cursive;
+  color: #B43317;
+}
+
+.rayas {
+  color: #AA6655;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(170, 102, 85, 0.9058823529);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #EFCDA6;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* media queries */
+@media screen and (max-width: 1200px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+  }
+  #main .bungalow-imagen {
+    margin-bottom: 4%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .img {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bungalow-imagen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main {
+    justify-content: space-around;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  #conteiner {
+    justify-content: center;
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  #conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+  .logo {
+    height: 3cm;
+    width: 3cm;
+  }
+}
+/* Pagina de inicio */
+h2 {
+  padding: 1%;
+  text-align: center;
+  color: #366D3F;
+  font-family: italic;
+  font-style: italic;
+}
+
+#locaciones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+#locaciones h4 {
+  text-align: center;
+  font-style: oblique;
+  font-size: small;
+}
+@media screen and (min-width: 768px) {
+  #locaciones {
+    display: flex;
+    flex-direction: row;
+  }
+  #locaciones img {
+    height: 7cm;
+  }
+}
+#locaciones .card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-bottom: 5%;
+  background-color: #926F56;
+  color: #77BFE2;
+}
+#locaciones .card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#locaciones .card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-bottom: 5%;
+  background-color: #926F56;
+  color: #77BFE2;
+}
+#locaciones .card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#locaciones .card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-bottom: 5%;
+  background-color: #926F56;
+  color: #77BFE2;
+}
+#locaciones .card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#locaciones .card4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-bottom: 5%;
+  background-color: #926F56;
+  color: #77BFE2;
+}
+#locaciones .card4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#locaciones .container {
+  padding: 2px 16px;
+}
+
+#explicacion {
+  padding: 1%;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-evenly;
+}
+#explicacion .texto {
+  text-align: justify;
+  color: #851B05;
+  padding-left: 5%;
+}
+@media screen and (min-width: 1000px) {
+  #explicacion {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "video" "texto";
+  }
+}
+
+/* Bungalows pagina */
+.col {
+  color: #851B05;
+}
+
+#main {
+  padding-bottom: 4%;
+}
+
+/* Spa pagina */
+.btn {
+  color: #851B05;
+  background-color: antiquewhite;
+}
+
+label {
+  color: #851B05;
+}
+
+/* Imagen */
+.img {
+  margin-left: 5cm;
+}
+
+/* falta favicon*/
+.footer {
+  text-align: center;
+  padding-top: 1%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #AA6655;
+  font-size: 15px;
+}/*# sourceMappingURL=main.css.map */

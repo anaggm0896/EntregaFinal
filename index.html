@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omnia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="description" content="hoteles boutique en vallarta">
+    <link rel="icon" type="image/x-icon" href="assets/img/BungalowV.png">
+    <meta name="keywords" content="hoteles en vallarta, golf en vallarta, spa en vallarta">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+    <!-- logo, titulo menu -->
+
+    <header id="header">
+
+        <div>
+            <img class="logo" src="assets/img/omnia hotel.jpeg" alt="50" height="50">
+        </div>
+
+        <h1>Villages</h1>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Inicio</a>
+                <a href="#">Bungalows</a>
+                <a href="#">Suites</a>
+                <a href="#">Spa</a>
+                <a href="#">Golf</a>
+
+            </div>
+        </div>
+
+        <span class="rayas" style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    </header>
+
+    <div id="contenedor-global">
+
+        <!-- Contenido  -->
+        <main id="contenido-global">
+
+            <!-- Carrusel de Bootstrap -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/hotelesvallarta.jpeg" class="d-block w-100" alt="..." height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/hotelesvallarta2.jpeg" class="d-block w-100" alt="..." height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/hotelesvallarta3.jpeg" class="d-block w-100" alt="..." height="500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lugares -->
+
+            <h2>Estancias</h2>
+
+            <div id="locaciones">
+
+                <div class="card1">
+                    <img src="assets/img/phuket.jpeg" alt="Avatar" height=100 style="width:100%">
+                    <div class="container">
+                        <h4><b>Phuket</b></h4>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="assets/img/cancun.jpeg" alt="Avatar" height=100 style="width:100%">
+                    <div class="container">
+                        <h4><b>Cancún</b></h4>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <img src="assets/img/vallarta.webp" alt="Avatar" height=100 style="width:100%">
+                    <div class="container">
+                        <h4><b>Vallarta</b></h4>
+                    </div>
+                </div>
+
+                <div class="card4">
+                    <img src="assets/img/maldives.jpeg" alt="Avatar" height=100 style="width:100%">
+                    <div class="container">
+                        <h4><b>Maldivas</b></h4>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Video -->
+
+            <h2>Nuestra Historia</h2>
+
+            <div id="explicacion">
+                <iframe class="video" width="500" height="400" src="https://www.youtube.com/embed/mBd3V5em8AQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen width="50%"></iframe>
+                </video>
+
+                <P class="texto">
+                    Somos una compañía internacional hotelera de capital mexicana. La Corporación nació por la compra de terrenos en Puerto Vallarta, Nayarit a fin de crear un ambiente exclusivo para que las personas vengan a vacacionar. En el 2015 nos expandimos a Cancún, Phuket y por fin en el 2018 abrimoos nuestro primer resort en las Islas Maldivas.
+                </P>
+              
+
+            </div>
+
+        </main>
+
+        <div class="footer">
+            Entrega Final Coder House
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+</body>
+
+
+
+</html>

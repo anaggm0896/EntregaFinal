@@ -433,6 +433,26 @@ h2 {
 }
 
 /* Spa pagina */
+
+.SPA__2 {
+    display: flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+
+    .col{
+        color: map-get(c.$colores, "parrafo");
+    }
+
+    .row{
+        margin-top: 4%;
+        margin-left: 4%;
+        padding-bottom: 7%;
+    }
+
+}
+
 .btn {
     color: map-get(c.$colores, "parrafo");
     background-color: antiquewhite;
@@ -440,6 +460,7 @@ h2 {
 
 label {
     color: map-get(c.$colores, "parrafo");
+   
 }
 
 /* Imagen */

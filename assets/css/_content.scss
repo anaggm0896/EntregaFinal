@@ -325,6 +325,54 @@ h2 {
     padding-bottom: (c.$margin);
 }
 
+@media screen and (min-width: 1400px) {
+    .boton{
+        margin-top: 20%;
+    }
+
+}
+  
+.button {
+    border-radius: 4px;
+    background-color: map-get(c.$colores, "menu");
+    border: none;
+    color: map-get(c.$colores, "bajo");
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 30px;
+
+    & span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+      
+    & span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+      
+    &:hover span {
+        padding-right: 25px;
+
+        &:after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+      
+}
+
 /* Spa pagina */
 
 .btn {

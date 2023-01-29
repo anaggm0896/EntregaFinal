@@ -192,6 +192,8 @@ body {
         margin-left: (c.$margin);
 
     }
+
+
 }
 
 /* Pagina de inicio */
@@ -387,19 +389,50 @@ h2 {
 
 /* Golf pagina */
 
-.row{
-    padding-left: 25%;
+.golf{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        .precios {
+            margin-top: 30%;
+        }
+    }
+}
+
+.precios{
+    margin-top: 2%;
+    margin-left: 15%;
+    color: map-get(c.$colores,"subtitulos");
+  
+}
+
+/* Bungalows pagina */
+
+.bunga{
+    padding-left: 2%;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     background-color: map-get(c.$colores,"menu");
     color: map-get(c.$colores,"segunda");
     border-radius: 50%;
 }
 
-/* Spa pagina */
+.bungalow-imagen {
+    margin-left: 4%;
+    margin-right: 4%;
+}
 
+/* Spa pagina */
 .btn {
     color: map-get(c.$colores, "parrafo");
     background-color: antiquewhite;
